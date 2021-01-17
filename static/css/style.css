@@ -9,13 +9,34 @@ body {
     color: #C4C4C4;*/
     font-family: 'Noto Sans', sans-serif;
 }
+.nav-wrapper {
+    background-color: white;
+}
+ul.right.hide-on-med-and-down li a, a.brand-logo, .sidenav-trigger {
+    color: black;
+}
+div.col.s6 {
+    padding-left: 0;
+}
+.resp-image {
+    background-size: cover;
+}
+div.input-field label.label-icon.active i.material-icons::before {
 
+}
+.preview-shopping-bag {
+    display: none;
+}
+.shopping-bag::hover {
+    display: flex;
+    background: red;
+}
 
 
 #select_country, #select_station { display: none; }
 
 a.brand-logo {
-    font-size: 20px;
+    font-size: 18px;
     /*color: #C4C4C4;
     text-shadow: 0px 3px 6px #000000;
     opacity: 1;
