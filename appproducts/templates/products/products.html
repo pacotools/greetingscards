@@ -9,9 +9,38 @@
 
 {% block content %}
     <div class="row">
-        <div class="col">
-            {{ products }}
-        </div>
+        {% for product in products %}
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    {% if product.image %}
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </div>
+                    {% else %}
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </div>
+                    {% endif %}
+                    <div class="card-content">
+                        <span class="activator">{{ product.name }}</span>
+                        <p>${{ product.price }}</p>
+                        {% if product.rating %}
+                            <small>
+                                <i class="material-icons rate-icon">grade</i> {{ product.rating }} / 5
+                            </small>
+                        {% else %}
+                            <small class="text-muted">No Rating</small>
+                        {% endif %}
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title">
+                            {{ product.name }}
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
-    <div class="divider"></div>
 {% endblock %}
