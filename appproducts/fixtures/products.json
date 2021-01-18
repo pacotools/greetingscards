@@ -1,0 +1,72 @@
+[
+  {
+    "pk": 1,
+    "model": "appproducts.product",
+    "fields": {
+      "sku": "000001",
+      "name": "Be Kind to Yourself Blank Encouragement Card",
+      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+      "price": 3.99,
+      "category": 3,
+      "rating": 3.2,
+      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image": "des-01.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "appproducts.product",
+    "fields": {
+      "sku": "000002",
+      "name": "Sending You Extra Love Thinking of You Card",
+      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+      "price": 5.99,
+      "category": 1,
+      "rating": 5.0,
+      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image": "des-02.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "appproducts.product",
+    "fields": {
+      "sku": "000003",
+      "name": "Your Love Is Inspiring Anniversary Card",
+      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+      "price": 35.99,
+      "category": 2,
+      "rating": 2.6,
+      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image": "des-03.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "appproducts.product",
+    "fields": {
+      "sku": "000004",
+      "name": "You Make the World a Nicer Place Thank You Card",
+      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+      "price": 12.99,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image": "des-04.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "appproducts.product",
+    "fields": {
+      "sku": "000005",
+      "name": "Dogwood Blossoms Deepest Sympathy Card",
+      "description": "Bootcut jeans in our just-right original fit are comfortable and look great too.  5-pocket style sits below waist straight fit through seat and thigh bootcut leg 18\" leg opening cotton washable imported extended sizes and washes available online only",
+      "price": 4.99,
+      "category": 3,
+      "rating": 3.6,
+      "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+      "image": "des-05.jpg"
+    }
+  }
+]

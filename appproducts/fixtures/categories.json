@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "appproducts.category", "fields": {"name": "thank_you", "friendly_name": "Thank You"}}, {"pk": 2, "model": "appproducts.category", "fields": {"name": "anniversary", "friendly_name": "Anniversary"}}, {"pk": 3, "model": "appproducts.category", "fields": {"name": "get_well", "friendly_name": "Get Well"}}]
