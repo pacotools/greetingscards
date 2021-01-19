@@ -21,6 +21,15 @@ div.col.s12.prod-det {
     padding: 0;
     display: flex;
 }
+div.col.s12.m12.l6 h4 {
+    margin-top: 0;
+}
+
+@media (max-width: 992px) {
+    div.col.s12.m12.l6 h4 {
+        margin-top: 20px;
+    }
+}
 
 div.input-field label.label-icon.active i.material-icons::before {
 
