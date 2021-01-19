@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.tabs').tabs();
     $('.materialboxed').materialbox();
     $('.modal').modal();
+    $('.carousel').carousel();
     $('.collapsible').collapsible();
     $('select').formSelect();
 });
