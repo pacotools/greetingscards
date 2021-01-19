@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="header-container">
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col s6">
+            {% if product.image %}
+                <img class="materialboxed" width="380" src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% else %}
+                <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+            {% endif %}
+        </div>
+        <div class="col s12 m12 l6">
+            <h4>{{ product.name }}</h4>
+            <p>${{ product.price }}</p>
+            {% if product.rating %}
+                <small>
+                    <i class="material-icons rate-icon">grade</i> {{ product.rating }} / 5
+                </small>
+            {% else %}
+                <small class="text-muted">No Rating</small>
+            {% endif %}
+            <p>{{ product.description }}</p>
+        </div>
+    </div>
+{% endblock %}

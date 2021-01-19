@@ -17,6 +17,10 @@ div.col.s6 {
 i.material-icons.rate-icon {
     font-size: 14px;
 }
+div.col.s12.prod-det {
+    padding: 0;
+    display: flex;
+}
 
 div.input-field label.label-icon.active i.material-icons::before {
 
