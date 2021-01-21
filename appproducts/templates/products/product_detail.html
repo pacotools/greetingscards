@@ -18,6 +18,13 @@
         <div class="col s12 m12 l6">
             <h4>{{ product.name }}</h4>
             <p>${{ product.price }}</p>
+            {% if product.category %}
+                <p>
+                    <a href="{% url 'appproducts' %}?category={{ product.category.name }}">
+                       <i class="material-icons label-icon">local_offer</i> {{ product.category.friendly_name }}
+                    </a>
+                </p>
+            {% endif %}
             {% if product.rating %}
                 <small>
                     <i class="material-icons rate-icon">grade</i> {{ product.rating }} / 5

@@ -17,7 +17,7 @@ ul.right.hide-on-med-and-down li a, a.brand-logo, .sidenav-trigger {
 div.col.s6 {
     padding-left: 0;
 }
-i.material-icons.rate-icon {
+i.material-icons.rate-icon, i.material-icons.label-icon {
     font-size: 14px;
 }
 div.col.s12.prod-det {
@@ -33,6 +33,21 @@ div.col.s12.m12.l6 h4 {
         margin-top: 20px;
     }
 }
+
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+
 
 div.input-field label.label-icon.active i.material-icons::before {
 
