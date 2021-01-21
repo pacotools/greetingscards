@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('.modal').modal();
     $('.carousel').carousel();
+    $('.fixed-action-btn').floatingActionButton();
     $('.collapsible').collapsible();
     $('select').formSelect();
 });

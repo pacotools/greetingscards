@@ -34,15 +34,6 @@ div.col.s12.m12.l6 h4 {
     }
 }
 
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
 .btt-link {
     cursor: pointer;
 }
