@@ -92,18 +92,20 @@
         </ul>
         <div id="modal1" class="modal bottom-sheet">
             <div class="modal-content">
-                <p>
-                    {% if grand_total %}
-                        ${{ grand_total|floatformat:2 }}
-                    {% else %}
-                        $0.00
-                    {% endif %}
-                </p>
+                <a href="{% url 'view_bag' %}">
+                    <p>
+                        {% if grand_total %}
+                            ${{ grand_total|floatformat:2 }}
+                        {% else %}
+                            $0.00
+                        {% endif %}
+                    </p>
+                </a>
             </div>
         </div>
         <div class="delivery-banner">
             <div class="center black white-text">
-                <h5>Free delivery on orders over ${{ free_shipping_threshold }}!</h5>
+                <h5>Free delivery on orders over ${{ free_delivery_threshold }}!</h5>
             </div>
         </div>
     </header>

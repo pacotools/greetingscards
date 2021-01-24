@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h2>Shopping Bag</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+
+            {% else %}
+                <p>Your bag is empty.</p>
+                <a href="{% url 'appproducts' %}">
+                    <span></span><i class="material-icons">chevron_left</i></span>
+                </a>
+                <span>Keep Shopping</span>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
