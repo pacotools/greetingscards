@@ -13,8 +13,53 @@
     <div class="row">
         <div class="col">
             {% if bag_items %}
-                <div class="responsive-table">
-                    {{ bag_items }}
+                <div class="responsive-table highlight">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product Info</th>
+                                <th></th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in bag_items %}
+                                <tr>
+                                    <td>
+                                        <img class="responsive-img" src="{{ item.product.image.url }}" width="200">
+                                    </td>
+                                    <td>
+                                        <p>{{ item.product.name }}</p>
+                                        <p class="small">{{ item.product.sku|upper }}</p>
+                                    </td>
+                                    <td><p>${{ item.product.price }}</p></td>
+                                    <td><p>{{ item.quantity }}</p></td>
+                                    <td><p>${{ item.price }}</p></td>
+                                </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                    <div class="right-align">
+                        <h6>Bag Total: ${{ total|floatformat:2 }}</h6>
+                        <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                        <h4>Grand Total: ${{ grand_total|floatformat:2 }}</h4>
+                        {% if free_delivery_delta > 0 %}
+                            <p>
+                                You could get free delivery by spending just ${{ free_delivery_delta }} more!
+                            </p>
+                        {% endif %}
+                    </div>
+                    <div class="right-align">
+                        <a href="{% url 'appproducts' %}" class="transparent black-text btn-small">
+                            <i class="material-icons left">chevron_left</i>Keep Shopping
+                        </a>
+                        <a href="" class="btn-small">
+                            <i class="material-icons left">lock</i>Secure Checkout
+                        </a>
+                    </div>
                 </div>
             {% else %}
                 <p>Your bag is empty.</p>
