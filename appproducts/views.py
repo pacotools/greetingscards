@@ -43,6 +43,8 @@ def all_products(request):
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+    else:
+        products = products.order_by('price')
 
     current_sorting = f'{sort}_{direction}'
 

@@ -59,8 +59,15 @@
                 </a>
                 <ul class="right">
                     <li>
-                        <a class="{% if grand_total %}text-info{% else %}black-text{% endif %} modal-trigger" href="#modal1">
-                            <i class="shopping-bag material-icons">local_mall</i>
+                        <a class="black-text modal-trigger" style="display: flex;" href="#modal1">
+                            <i class="material-icons">local_mall</i>
+                            <div>
+                                {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                {% else %}
+                                    $0.00
+                                {% endif %}
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -93,19 +100,17 @@
         <div id="modal1" class="modal bottom-sheet">
             <div class="modal-content">
                 <a href="{% url 'view_bag' %}">
-                    <p>
-                        {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
-                        {% else %}
-                            $0.00
-                        {% endif %}
-                    </p>
+                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                {% else %}
+                                    $0.00
+                                {% endif %}
                 </a>
             </div>
         </div>
         <div class="delivery-banner">
             <div class="center black white-text">
-                <h5>Free delivery on orders over ${{ free_delivery_threshold }}!</h5>
+                <h5>Magical and meaningful items that you won't find anywhere else</h5>
             </div>
         </div>
     </header>

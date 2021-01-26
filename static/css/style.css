@@ -27,7 +27,6 @@ div.col.s12.prod-det {
 div.col.s12.m12.l6 h4 {
     margin-top: 0;
 }
-
 @media (max-width: 992px) {
     div.col.s12.m12.l6 h4 {
         margin-top: 20px;
@@ -44,11 +43,8 @@ div.input-field label.label-icon.active i.material-icons::before {
 
 }
 .preview-shopping-bag {
-    display: none;
-}
-.shopping-bag::hover {
-    display: flex;
-    background: red;
+    margin: 0;
+    padding: 0;
 }
 
 #select_country, #select_station { display: none; }
